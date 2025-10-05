@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPulse-پیکسل پالس</title>
+    <link rel="icon" href="assets/icon PixlePulse.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <div class="divError"></div>
+    <div id="content" class="master">
+        <header>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li><img src="assets/psd Logo PixlePulse.jpg">
+                            <p>PixelPulse</p>
+                        </li>
+                        <li class="hoverLi"><i class="ri-home-4-line"></i>خانه
+                            <ol>
+                                <li class="featureScrol">خدمات</li>
+                                <li class="buttonWeb">انواع وبسایت ها</li>
+                                <li class="notLast" id="priceItem">قیمت ها</li>
+                            </ol>
+                        </li>
+                        <li onclick="showRule()" class="hoverLi"><i class="ri-profile-line"></i>قوانین</li>
+                        <li class="hoverLi" id="contact"><i class="ri-phone-line"></i>تماس با ما</li>
+                        <li><button class="buttonThem" type="button"><i id="iconButtonThem"
+                                    class="ri-moon-line"></i></button></li>
+                        <li onclick="showOrder()" style="text-shadow: none;" id="orderIn" class="lastChild"><button
+                                style="text-shadow: none; box-shadow: none;" id="buttonLogin"
+                                type="button">سفارش</button></li>
+                        <li id="liMenu" class="menu"><i class="ri-menu-line"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="sidebar" class="sidebar">
+            <div class="navSide">
+                <ul>
+                    <li id="closeMenu" class="closeMenu"><i id="iCloseSide" class="ri-close-line"></i></li>
+                    <li class="logoLi"><img
+                            style="width: 70px; border-radius: 50%; box-shadow: 0px 0px 9px white; border: 2px solid black; margin-right: 10px;"
+                            src="assets/psd Logo PixlePulse.jpg">
+                        <p>PixlePulse</p>
+                    </li>
+                    <li class="featureScrol">خدمات</li>
+                    <li class="buttonWeb">انواع وبسایت ها</li>
+                    <li id="priceItem">قیمت ها</li>
+                    <li onclick="showRule()">قوانین</li>
+                    <li id="contact">تماس با ما</li>
+                    <li class="themLi"><button id="buttonSidebarThem" class="buttonThem" type="button"><i
+                                id="iconButtonThem2" class="ri-moon-line"></i></button></li>
+                    <li onclick="showOrder()" id="orderIn" class="lastChild"><button id="buttonLogin2"
+                            type="button">سفارش</button></li>
+                </ul>
+            </div>
+        </div>
+        <div onclick="closeSide()" class="outSide">
+
+        </div>
+        <article>
+            <div class="itemArticle">
+                <div class="gifArticle">
+                    <img id="imageAn" src="assets/developer_med.gif">
+                </div>
+                <div class="textArticle">
+                    <h2>همین الان سایت خودتو بساز!</h2>
+                    <p>با ما، آینده‌ی دیجیتال شما روشن‌تر از همیشه خواهد بود. ما در طراحی و ساخت وب‌سایت‌های برندینگ و
+                        شرکتی، بهترین‌ها را به شما ارائه می‌دهیم. تیم ما با تکیه بر دانش و خلاقیت، به شما کمک می‌کند تا
+                        در دنیای آنلاین بدرخشید. به ما اعتماد کنید و از تخصص ما بهره‌مند شوید تا کسب و کارتان را به سطح
+                        جدیدی برسانید.</p>
+                    <button onclick="showOrder()" id="buttonSubmit" type="button">سفارش!</button>
+                </div>
+            </div>
+            <div class="fetureScrollWeb"></div>
+        </article>
+        <div class="feature">
+            <div style="width: 300px;" class="item1">
+                <img src="assets/item1 programming.jpg">
+                <div class="overlay">
+                    <h2 class="pWidthLow">برنامه نویسی سایت</h2>
+                    <p class="pWidthLow">ما براتون طرحی که دارین را اجرا میکنیم و تبدیل میکنیم به کد(درصورت نیاز طراحی
+                        هم میکنیم براتون)</p>
+                </div>
+            </div>
+            <div class="item2">
+                <img src="assets/item2 suport.png">
+                <div class="overlay">
+                    <h2 class="pWidthLow">پشتیبانی</h2>
+                    <p class="pWidthLow">تا 6 ماه به صورت رایگان پشتیبانی داریم</p>
+                </div>
+            </div>
+            <div class="item3">
+                <img src="assets/item3 server.png">
+                <div class="overlay">
+                    <h2 class="pWidthLow">بهینه کردن و افزودن سرعت وب سایت</h2>
+                    <p class="pWidthLow">ما با بهینه کردن کد ها و.. به صورت حرفه ای ترین حالت ممکن سایت شمارا بهینه
+                        میکنیم</p>
+                </div>
+            </div>
+        </div>
+        <p id="hoverMe">کلیک کن --></p>
+        <div class="web">
+            <h2>چه نوع وبسایتی میخواید؟</h2>
+            <p>!طرحتون هرچی باشه ما به کد تبدیلش میکنیم</p>
+            <div class="itemWebDiv1">
+                <div class="itemWeb1">
+                    <img src="assets/item1.png">
+                    <p>فروشگاهی</p>
+                </div>
+                <div class="itemWeb2">
+                    <img src="assets/item2.png">
+                    <p>آموزشی</p>
+                </div>
+                <div class="itemWeb3">
+                    <img src="assets/item3.png">
+                    <p>شرکتی</p>
+                </div>
+            </div>
+            <div class="itemWebDiv2">
+                <div class="itemWeb4">
+                    <img src="assets/item5.png">
+                    <p>خبری</p>
+                </div>
+                <div class="itemWeb5">
+                    <img src="assets/item4.png">
+                    <p>ایده های خاص</p>
+                </div>
+                <div class="itemWeb6">
+                    <img src="assets/item8.png">
+                    <p>معرفی</p>
+                </div>
+            </div>
+        </div>
+        <div class="rule-button">
+            <h2 class="title-rule">جهت خواندن قوانین روی این دکمه کلیک کنید --> <button
+                    onclick="showRule()">قوانین</button></h2>
+        </div>
+        <h2 class="titlePrice">قیمت خدمات کدنویسی و طراحی سایت</h2>
+        <div class="price">
+            <div class="item1Price">
+                <div class="header">
+                    <h2 style='color : white ;'>اقتصادی</h2>
+                    <p style='color : white ;'>کد نویسی سایت با طراحی آماده</p>
+                </div>
+
+                <div class="priceItem">
+                    <p>شروع قیمت : <span>6</span> میلیون تومان</p>
+                </div>
+                <div class="featurePrice">
+                    <ul>
+                        <li>تهیه هاست و دامنه &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>پشتیبانی سایت ( شامل هزینه ) &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>خدمات امنیت سایت &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>خدمات افزایش سرعت سایت &nbsp;&nbsp;<i style='color : white;' id="ri-close-line"
+                                class="ri-close-line"></i></li>
+                        <li>سئو داخلی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-close-line"
+                                class="ri-close-line"></i></li>
+                        <li>طراحی UI و UX اختصاصی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-close-line"
+                                class="ri-close-line"></i></li>
+                        <li>محتوا نویسی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-close-line"
+                                class="ri-close-line"></i></li>
+                    </ul>
+                </div>
+                <button id="plan1B" onclick="showOrder()"
+                    style="transition: all .3s ease; cursor: pointer;">سفارش</button>
+                <p>دوستان توجه داشته باشین که قبل از سفارش دادن تمامی قوانین رو بخوانین : <button onclick="showRule()"
+                        style="transition: all .3s ease; cursor: pointer;">خواندن قوانین</button></p>
+            </div>
+            <div class="item2Price">
+                <div class="header">
+                    <h2 style='color : white ;'>حرفه ای</h2>
+                    <p style='color : white ;'>کد نویسی سایت با تغییرات کم در طراحی </p>
+                </div>
+                <div class="priceItem">
+                    <p>شروع قیمت : <span>20</span> میلیون تومان</p>
+                </div>
+                <div class="featurePrice">
+                    <ul>
+                        <li>تهیه هاست و دامنه &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>پشتیبانی سایت ( شامل هزینه ) &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>خدمات امنیت سایت &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>خدمات افزایش سرعت سایت &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>سئو داخلی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>طراحی UI و UX اختصاصی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-close-line"
+                                class="ri-close-line"></i></li>
+                        <li>محتوا نویسی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-close-line"
+                                class="ri-close-line"></i></li>
+                    </ul>
+                </div>
+                <button id="plan2B" onclick="showOrder()"
+                    style="transition: all .3s ease; cursor: pointer;">سفارش</button>
+                <p>دوستان توجه داشته باشین که قبل از سفارش دادن تمامی قوانین رو بخوانین : <button onclick="showRule()"
+                        style="transition: all .3s ease; cursor: pointer;">خواندن قوانین</button></p>
+            </div>
+            <div class="item3Price">
+                <div class="header">
+                    <h2 style='color : white ;'>اختصاصی</h2>
+                    <p style='color : white ;'>کد نویسی سایت با 0/100 طراحی و تمام امکانات</p>
+                </div>
+                <div class="priceItem">
+                    <p>شروع قیمت : <span>45</span> میلیون تومان</p>
+                </div>
+                <div class="featurePrice">
+                    <ul>
+                        <li>تهیه هاست و دامنه &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>پشتیبانی سایت ( شامل هزینه ) &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>خدمات امنیت سایت &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>خدمات افزایش سرعت سایت &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>سئو داخلی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>طراحی UI و UX اختصاصی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                        <li>محتوا نویسی صفحات &nbsp;&nbsp;<i style='color : white;' id="ri-check-line"
+                                class="ri-check-line"></i></li>
+                    </ul>
+                </div>
+                <button id="plan3B" onclick="showOrder()"
+                    style="transition: all .3s ease; cursor: pointer;">سفارش</button>
+                <p>دوستان توجه داشته باشین که قبل از سفارش دادن تمامی قوانین رو بخوانین : <button onclick="showRule()"
+                        style="transition: all .3s ease; cursor: pointer;">خواندن قوانین</button></p>
+            </div>
+        </div>
+        <h2 class="title-faq">جواب سوالات شما</h2>
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>شروع همکاری چگونه است؟</span>
+                        <i class="arrow down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ol>
+                            <li>تمامی قوانین را خوانده باشین و موافقت کرده باشین.</li><br>
+                            <li>یا یک طراحی آماده به ما بدهید و یا یک توصیف خوب از پروژه و چیزی که میخواهید تحویل بگیرید
+                                کنید.</li><br>
+                            <li>پیش پرداخت پروژه رو بعد از قیمت گذاری روی پروژه کامل پرداخت کنین.</li><br>
+                            <li>از همان اول تمامی چیز هایی که میخواهید را مشخص کنید.</li><br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>مشخص کردن هزینه به چه صورت هست؟</span>
+                        <i class="arrow down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ol>
+                            <li>تیم ما نسبت به خرج هایی که قراره در پروژه شما شود و سطح پروژه ی شما یک قیمت معقولی را در
+                                نظر میگیرد که هم شما راضی باشید هم ما.</li><br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>پرداخت هزینه چگونه است؟</span>
+                        <i class="arrow down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ol>
+                            <li>اول از همه وقتی بین ما و شما توافق کامل شکل گرفت پیش نیاز است که شما 50% درصد از هزینه ی
+                                پروژتون رو برای ما واریز کنید.</li><br>
+                            <li>سپس ما یک مدتی را تعین میکنیم برای تحویل پروژتون و زمانی که نصف زمان گذشت و ما نیمی از
+                                پروژتون رو به اتمام رسوندیم 30% درصد از از هزنه ی دیگر هم ازتون درخواست میکینم تا شما
+                                پرداخت کنید و اگر نه ما به کارمون ادامه نمیدیم و تحویل پروژتون به تعویق می افتد.</li>
+                            <br>
+                            <li>زمانی که ما تمام پروژه را به اتمام رسوندیم لازم است که برای تحویل گرفتن پروژه تمامی
+                                هزینه وبسایت و خدمات دیگر را پرداخت کنید تا پروژتون را تحویل بگیرید.</li><br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>تهیه هاست و دامنه به چه صورت است؟</span>
+                        <i class="arrow down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ol>
+                            <li>اول از همه ما نسبت به پروژه ی شما و سنگینی آن یک هاستی را در نظر میگیریم.</li><br>
+                            <li>سپس به نام شما یک دامنه تهیه میکنیم.</li><br>
+                            <li>سایت شما را در هاست بالا میاوریم.</li><br>
+                            <li>هاست شما ترجیها با موافقت کردن شما روی سی پنل است.</li><br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>پشتیبانی وب سایت شما در صورت درخواست به چه صورت است؟</span>
+                        <i class="arrow down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ol>
+                            <li>اول از همه ما تا 6 ماه برای شما اگر دوست داشته باشین پشتیبانی رایگان داریم(درصورت سفارش
+                                دادن).</li><br>
+                            <li>اگر 6 ماه شما به اتمام رسید و شما خواستید با پرداخت یک هزینه کوچیک دوباره پشتیبانی سایت
+                                شما را بر عهده میگیریم.</li><br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>شرایط لغو کردن پروژه چگونه است؟</span>
+                        <i class="arrow down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ol>
+                            <li>اگر قبل از اتمام نیمی از پروژه لغو شود ما نیمی از پول پیش پرداخت را باز خواهیم گرداند.
+                            </li><br>
+                            <li>اگر پس از نیمی از اتمام پروژه شما پروژه رو لغو کرده باشید فقط 30% از هزینه ای که پرداخت
+                                کرده اید بهتون برگردانده میشود.</li><br>
+                            <li>نکته:ما به دلیل بعضی از شرایط ها توانایی نگه داشتن پروژه های لغو شده و طرح آن را نداریم
+                                و اگر بخواهید دوباره شروع کنید هزینه و تمامی کار ها دوباره باید پرداخت شود.</li><br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mosh">
+            <p>مشاوره رایگان در دایرکت اینستاگرام ما</p>
+            <a style="padding-bottom: 1px;" href="https://www.instagram.com/___pixelpulse___/" target="_blank"><i
+                    class="ri-instagram-line"></i></a>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <div class="divCall">
+                    <h2 class="titleCall">راه های ارتباطی با ما --></h2>
+                    <div class="call">
+                        <a href="https://www.instagram.com/___pixelpulse___/" target="_blank"><i id="divCallI"
+                                class="ri-instagram-line"></i></a>
+                        <a href="tel:09331633485" target="_blank"><i id="divCallI" class="ri-phone-line"></i></a>
+                        <a href="https://discord.gg/MVSkmdGhDD" target="_blank"><i id="divCallI"
+                                class="ri-discord-line"></i></a>
+                        <a href="https://t.me/PixlePulse" target="_blank"><i id="divCallI"
+                                class="ri-telegram-line"></i></a>
+                        <a href="www.youtube.com/@PixlePulse-chanellOne" target="_blank"><i id="divCallI"
+                                class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="rule">
+        <i onclick="hideRule()" class="ri-close-line"></i>
+        <h2>قوانین</h2>
+        <ol>
+            <li>لطفا زمانی که دارید با تیم ما توافق میکنیم خواستار تخفیف زیادی نباشید چون واقعا ما داریم با کمترین هزینه
+                ی ممکن کار میکنیم و در حال حاضر الان سایت هایی که با وردپرس ساخته میشن یه همچین قیمت هایی دارند و برای
+                ما واقعا نمیصرفه و هرچه قدر برامون به صرفه به شما تخفیف می‌دهیم.</li><br><br>
+            <li>ممکن تحویل پروژه تون از زمانی که تعین شده یکی دو روز اینور یا اونور بشه و خب این به خاطر بروز مشکلات پیش
+                بینی نشده است اما شما شک نکنید که ما احتمال خیلی زیاد زود تر از زمان تعین شده پروژتون رو تحویل خواهیم
+                داد.</li><br><br>
+            <li>تهیه دامنه و هاست یا با عهده شماست و یا ما با اطلاعات شما انجامش خواهیم داد.</li><br><br>
+            <li>شما میتوانید ما را به دوستانتان معرفی کنید و هر یک نفر از طرف شما بیاد و پروژه سفارش بده به شما 5 الا
+                10% تخفیف داده خواهد شد.</li><br><br>
+            <li>اگر قبل از اتمام نیمی از پروژه لغو شود ما نیمی از پول پیش پرداخت را باز خواهیم گرداند.
+                اگر پس از نیمی از اتمام پروژه شما پروژه رو لغو کرده باشید فقط 30% از هزینه ای که پرداخت کرده اید بهتون
+                برگردانده میشود.
+                نکته:ما به دلیل بعضی از شرایط ها توانایی نگه داشتن پروژه های لغو شده و طرح آن را نداریم و اگر بخواهید
+                دوباره شروع کنید هزینه و تمامی کار ها دوباره باید پرداخت شود.</li><br>
+        </ol>
+    </div>
+    <div style="overflow-y: auto;" class="order">
+        <i onclick="hideOrder()" class="ri-close-line"></i>
+        <div class="container2">
+            <h1>فرم سفارش پروژه</h1>
+            <form method="post" id="orderForm">
+                <label for="name">نام:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">شماره تلفن:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="plan">پلن:</label>
+                <div class="plans">
+                    <label>
+                        <input id="plan1" type="radio" name="plan" value="اقتصادی" required>
+                        اقتصادی
+                    </label>
+                    <label>
+                        <input id="plan2" type="radio" name="plan" value="حرفه‌ای" required>
+                        حرفه‌ای
+                    </label>
+                    <label>
+                        <input id="plan3" type="radio" name="plan" value="اختصاصی" required>
+                        اختصاصی
+                    </label>
+                </div>
+                <label for="description">توضیحات:</label>
+                <textarea id="description" name="description"
+                    placeholder="شما میتوانید با توضیحات درباره مثلا نوع سایتتون و.... پروژتون رو توصیف کنید و ما در اصرع وقت باهاتون تماس بگیریم"
+                    required></textarea>
+                <button class="buttonOrder" type="submit"><a href="">ارسال</a></button>
+            </form>
+        </div>
+    </div>
+    <script src="build/index.js"></script>
+</body>
+
+</html>
